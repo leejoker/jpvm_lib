@@ -1,51 +1,65 @@
 
 unit Core;
 
-{$mode ObjFPC}{$H+}
+{$mode ObjFPC}{$H+}{$M+}
 
 interface
 
+uses Classes;
+
 type
-  JpvmConfig = class
+  TJdkVersionInfo = class(TPersistent)
   private
-    jdkPath: string;
-    cachePath: string;
-    jdkCachePath: string;
-    versionPath: string;
-    currentVersionPath: string;
-    logPath: string;
+    fdistro: string;
+    fversion: string;
+  published
+    property distro: string read fdistro write fdistro;
+    property version: string read fversion write fversion;
+  end;
+
+  TJpvmConfig = class
+  private
+    fjdkPath: string;
+    fcachePath: string;
+    fjdkCachePath: string;
+    fversionPath: string;
+    fcurrentVersionPath: string;
+    flogPath: string;
   public
     constructor Create(jpvmPath: string);
-    //function CreateDirectory(dirPath: string): boolean;
-    function GetJdkPath: string;
-    function GetCachePath: string;
-    function GetJdkCachePath: string;
-    function GetVersionPath: string;
-    function GetCurrentVersionPath: string;
-    function GetLogPath: string;
-
-    procedure SetJdkPath(_jdkPath: string);
-    procedure SetCachePath(_cachePath: string);
-    procedure SetJdkCachePath(_jdkCachePath: string);
-    procedure SetVersionPath(_versionPath: string);
-    procedure SetCurrentVersionPath(_currentVersionPath: string);
-    procedure SetLogPath(_logPath: string);
   published
-    property PJdkPath: string read GetJdkPath write SetJdkPath;
-    property PCachePath: string read GetCachePath write SetCachePath;
-    property PJdkCachePath: string read GetJdkCachePath write SetJdkCachePath;
-    property PVersionPath: string read GetVersionPath write SetVersionPath;
-    property PCurrentVersionPath: string read GetCurrentVersionPath
-      write SetCurrentVersionPath;
-    property PLogPath: string read GetLogPath write SetLogPath;
+    property jdkPath: string read fjdkPath write fjdkPath;
+    property cachePath: string read fcachePath write fcachePath;
+    property jdkCachePath: string read fjdkCachePath write fjdkCachePath;
+    property versionPath: string read fversionPath write fversionPath;
+    property currentVersionPath: string read fcurrentVersionPath
+      write fcurrentVersionPath;
+    property logPath: string read flogPath write flogPath;
   end;
 
 function GetJpvmHome: string;
+function Current: string;
+procedure CheckJpvmHome();
 
 implementation
 
 uses
   SysUtils;
+
+const
+  VERSION_URL = 'https://gitee.com/monkeyNaive/jpvm/raw/master/versions.json';
+
+constructor TJpvmConfig.Create(jpvmPath: string);
+begin
+  fjdkPath := jpvmPath + DirectorySeparator + 'jdks';
+  fcachePath := jpvmPath + DirectorySeparator + 'cache';
+  fjdkCachePath := cachePath + DirectorySeparator + 'jdks';
+  fversionPath := jdkPath + DirectorySeparator + 'versions.json';
+  fcurrentVersionPath := jpvmPath + DirectorySeparator + '.jdk_version';
+  flogPath := jpvmPath + DirectorySeparator + 'jpvm.log';
+end;
+
+//------------------------- static function---------------------------------
 
 function GetJpvmHome: string;
 var
@@ -63,74 +77,24 @@ begin
   {$ENDIF}
 end;
 
-constructor JpvmConfig.Create(jpvmPath: string);
+procedure CheckJpvmHome();
 begin
-  PJdkPath := jpvmPath + DirectorySeparator + 'jdks';
-  PCachePath := jpvmPath + DirectorySeparator + 'cache';
-  PJdkCachePath := PCachePath + DirectorySeparator + 'jdks';
-  PVersionPath := PJdkPath + DirectorySeparator + 'versions.json';
-  PCurrentVersionPath := jpvmPath + DirectorySeparator + '.jdk_version';
-  PLogPath := jpvmPath + DirectorySeparator + 'jpvm.log';
+  ForceDirectories(GetJpvmHome);
 end;
 
-function JpvmConfig.GetJdkPath: string;
+function Current: PChar; cdecl;
+var
+  jpvmHome: string;
+  config: TJpvmConfig;
 begin
-  Result := jdkPath;
-end;
+  jpvmHome := GetJpvmHome();
+  CheckJpvmHome();
+  config := TJpvmConfig.Create(jpvmHome);
 
-function JpvmConfig.GetCachePath: string;
-begin
-  Result := cachePath;
-end;
-
-function JpvmConfig.GetJdkCachePath: string;
-begin
-  Result := jdkCachePath;
-end;
-
-function JpvmConfig.GetVersionPath: string;
-begin
-  Result := versionPath;
-end;
-
-function JpvmConfig.GetCurrentVersionPath: string;
-begin
-  Result := currentVersionPath;
-end;
-
-function JpvmConfig.GetLogPath: string;
-begin
-  Result := logPath;
-end;
-
-procedure JpvmConfig.SetJdkPath(_jdkPath: string);
-begin
-  jdkPath := _jdkPath;
-end;
-
-procedure JpvmConfig.SetCachePath(_cachePath: string);
-begin
-  cachePath := _cachePath;
-end;
-
-procedure JpvmConfig.SetJdkCachePath(_jdkCachePath: string);
-begin
-  jdkCachePath := _jdkCachePath;
-end;
-
-procedure JpvmConfig.SetVersionPath(_versionPath: string);
-begin
-  versionPath := _versionPath;
-end;
-
-procedure JpvmConfig.SetCurrentVersionPath(_currentVersionPath: string);
-begin
-  currentVersionPath := _currentVersionPath;
-end;
-
-procedure JpvmConfig.SetLogPath(_logPath: string);
-begin
-  logPath := _logPath;
+  if FileExists(config.currentVersionPath) then
+    begin
+      //todo
+    end;
 end;
 
 end.

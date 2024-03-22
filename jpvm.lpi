@@ -34,6 +34,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Core"/>
       </Unit>
+      <Unit>
+        <Filename Value="core_test_case.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CoreTestCase"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
