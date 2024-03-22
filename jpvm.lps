@@ -9,17 +9,18 @@
         <Filename Value="jpvm.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="10" Y="6"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="src\core.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Core"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="68"/>
-        <CursorPos X="7" Y="96"/>
-        <UsageCount Value="27"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="70"/>
+        <CursorPos X="13" Y="96"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -58,12 +59,10 @@
         <Filename Value="core_test_case.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="CoreTestCase"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="31"/>
         <CursorPos X="17" Y="42"/>
         <UsageCount Value="21"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\Softs\freepascal\fpcsrc\packages\fcl-fpcunit\src\fpcunit.pp"/>
@@ -73,7 +72,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="24">
       <Position>
         <Filename Value="jpvm.lpr"/>
         <Caret Line="18" Column="39"/>
@@ -138,21 +137,6 @@
         <Caret Line="8" Column="7"/>
       </Position>
       <Position>
-        <Filename Value="core_test_case.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="core_test_case.pas"/>
-        <Caret Line="25" Column="33" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="core_test_case.pas"/>
-        <Caret Line="49" Column="5" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="core_test_case.pas"/>
-        <Caret Line="29" Column="23" TopLine="7"/>
-      </Position>
-      <Position>
         <Filename Value="jpvm.lpr"/>
         <Caret Line="13" Column="8"/>
       </Position>
@@ -167,10 +151,6 @@
       <Position>
         <Filename Value="jpvm.lpr"/>
         <Caret Line="15" Column="15"/>
-      </Position>
-      <Position>
-        <Filename Value="core_test_case.pas"/>
-        <Caret Line="42" Column="17" TopLine="19"/>
       </Position>
       <Position>
         <Filename Value="src\core.pas"/>
