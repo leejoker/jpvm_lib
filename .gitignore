@@ -1,3 +1,5 @@
 jpvm
 lib/
 *.dylib
+backup/
+**/backup/
