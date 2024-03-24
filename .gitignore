@@ -3,3 +3,4 @@ lib/
 *.dylib
 backup/
 **/backup/
+jpvm.exe
