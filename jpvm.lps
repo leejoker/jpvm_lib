@@ -8,8 +8,8 @@
       <Unit>
         <Filename Value="jpvm.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="10" Y="6"/>
-        <UsageCount Value="28"/>
+        <CursorPos X="20" Y="13"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -18,42 +18,10 @@
         <UnitName Value="Core"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="70"/>
-        <CursorPos X="13" Y="96"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="79"/>
+        <CursorPos X="6" Y="97"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="D:\freepascal\fpcsrc\rtl\win\syswinh.inc"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="20" Y="19"/>
-        <UsageCount Value="10"/>
-      </Unit>
-      <Unit>
-        <Filename Value="..\..\..\Softs\freepascal\fpcsrc\rtl\unix\sysutils.pp"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
-      </Unit>
-      <Unit>
-        <Filename Value="..\..\..\Softs\freepascal\fpcsrc\rtl\objpas\sysutils\filutilh.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="172"/>
-        <CursorPos X="25" Y="201"/>
-        <UsageCount Value="10"/>
-      </Unit>
-      <Unit>
-        <Filename Value="..\..\..\Softs\freepascal\fpcsrc\rtl\objpas\sysutils\diskh.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="4"/>
-        <CursorPos X="19" Y="27"/>
-        <UsageCount Value="10"/>
-      </Unit>
-      <Unit>
-        <Filename Value="..\..\..\Softs\freepascal\fpcsrc\packages\fcl-json\src\fpjsonrtti.pp"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="914"/>
-        <CursorPos X="42" Y="922"/>
-        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="core_test_case.pas"/>
@@ -62,76 +30,73 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="31"/>
         <CursorPos X="17" Y="42"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
-        <Filename Value="..\..\..\Softs\freepascal\fpcsrc\packages\fcl-fpcunit\src\fpcunit.pp"/>
+        <Filename Value="D:\freepascal\fpcsrc\rtl\win\syswinh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="2" Y="19"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Softs\freepascal\fpcsrc\rtl\unix\sysutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Softs\freepascal\fpcsrc\rtl\objpas\sysutils\filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="172"/>
+        <CursorPos X="25" Y="201"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Softs\freepascal\fpcsrc\rtl\objpas\sysutils\diskh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="19" Y="27"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Softs\freepascal\fpcsrc\packages\fcl-json\src\fpjsonrtti.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="914"/>
+        <CursorPos X="42" Y="922"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Softs\freepascal\fpcsrc\packages\fcl-fpcunit\src\fpcunit.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="59"/>
         <CursorPos X="21" Y="92"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="D:\freepascal\fpcsrc\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1321"/>
+        <CursorPos X="19" Y="1414"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\freepascal\fpcsrc\rtl\win\sysutils.pp"/>
+        <UnitName Value="SysUtils"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="91" Y="6"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\freepascal\lazarus\components\lazutils\fileutil.pas"/>
+        <UnitName Value="FileUtil"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="59"/>
+        <CursorPos X="10" Y="70"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="24">
-      <Position>
-        <Filename Value="jpvm.lpr"/>
-        <Caret Line="18" Column="39"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="44" Column="11" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="49" Column="13" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="73" Column="20" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="75" Column="19" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="78" Column="29" TopLine="61"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="20" Column="58"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="48" Column="67" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="47" Column="4" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="40" Column="14" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="49" Column="79" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="51" Column="25" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="jpvm.lpr"/>
-        <Caret Line="30" Column="50" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="6" Column="10"/>
-      </Position>
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="src\core.pas"/>
         <Caret Line="8" Column="7"/>
@@ -171,6 +136,82 @@
       <Position>
         <Filename Value="src\core.pas"/>
         <Caret Line="22" Column="38"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="95" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="99" Column="7" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="99" Column="7" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="98" Column="6" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="104" Column="7" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="41" Column="10" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="96" Column="33" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="jpvm.lpr"/>
+        <Caret Line="10" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="103" Column="33" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="98" Column="15" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="101" Column="7" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="jpvm.lpr"/>
+        <Caret Line="11" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="105" Column="30" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="103" Column="38" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="105" Column="51" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="jpvm.lpr"/>
+        <Caret Line="13" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="47" Column="22" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="100" Column="22" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="99" Column="37" TopLine="77"/>
       </Position>
     </JumpHistory>
     <RunParams>

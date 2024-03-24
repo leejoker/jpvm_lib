@@ -44,7 +44,7 @@ procedure CheckJpvmHome();
 implementation
 
 uses
-  SysUtils;
+  SysUtils, FileUtil;
 
 const
   VERSION_URL = 'https://gitee.com/monkeyNaive/jpvm/raw/master/versions.json';
@@ -82,7 +82,7 @@ begin
   ForceDirectories(GetJpvmHome);
 end;
 
-function Current: PChar; cdecl;
+function Current: string;
 var
   jpvmHome: string;
   config: TJpvmConfig;
@@ -92,9 +92,11 @@ begin
   config := TJpvmConfig.Create(jpvmHome);
 
   if FileExists(config.currentVersionPath) then
-    begin
-      //todo
-    end;
+  begin
+    Result := ReadFileToString(config.currentVersionPath);
+  end
+  else
+    WriteLn('version file not exists');
 end;
 
 end.
