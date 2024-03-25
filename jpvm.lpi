@@ -39,11 +39,6 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Core"/>
       </Unit>
-      <Unit>
-        <Filename Value="core_test_case.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="CoreTestCase"/>
-      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -64,6 +59,9 @@
       <Debugging>
         <DebugInfoType Value="dsDwarf3"/>
       </Debugging>
+      <Options>
+        <ExecutableType Value="Library"/>
+      </Options>
     </Linking>
   </CompilerOptions>
   <Debugging>

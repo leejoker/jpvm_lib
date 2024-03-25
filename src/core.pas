@@ -39,6 +39,12 @@ type
 
 function GetJpvmHome: string;
 function Current: string;
+function Clean(): boolean;
+function Remove(distro, version: string): boolean;
+//function Install(distro, version: string): boolean;
+//function Use(distro, version: string): boolean;
+//function DistroList(): string;
+//function VersionList(distro: string);
 procedure CheckJpvmHome();
 
 implementation
@@ -77,11 +83,6 @@ begin
   {$ENDIF}
 end;
 
-procedure CheckJpvmHome();
-begin
-  ForceDirectories(GetJpvmHome);
-end;
-
 function Current: string;
 var
   jpvmHome: string;
@@ -97,6 +98,42 @@ begin
   end
   else
     WriteLn('version file not exists');
+end;
+
+function Clean(): boolean;
+var
+  config: TJpvmConfig;
+begin
+  config := TJpvmConfig.Create(GetJpvmHome());
+  if DirectoryExists(config.cachePath) then
+    Result := DeleteDirectory(config.cachePath, True)
+  else
+  begin
+    WriteLn('directory is not exists');
+    Result := True;
+  end;
+end;
+
+function Remove(distro, version: string): boolean;
+var
+  config: TJpvmConfig;
+  distroPath: string;
+begin
+  config := TJpvmConfig.Create(GetJpvmHome());
+  distroPath := config.jdkPath + DirectorySeparator + Trim(distro) +
+    DirectorySeparator + Trim(version);
+  if DirectoryExists(distroPath) then
+    Result := DeleteDirectory(distroPath, False)
+  else
+  begin
+    WriteLn('directory is not exists');
+    Result := True;
+  end;
+end;
+
+procedure CheckJpvmHome();
+begin
+  ForceDirectories(GetJpvmHome);
 end;
 
 end.

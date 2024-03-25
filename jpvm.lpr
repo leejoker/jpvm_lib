@@ -1,4 +1,4 @@
-program jpvm;
+library jpvm;
 
 {$mode objfpc}{$H+}
 
@@ -6,9 +6,24 @@ uses
   Classes,
   Core;
 
-var
-  configStr: string;
-begin
-  configStr := Current;
-  WriteLn(configStr);
+  function CurrentDistro(): PChar; cdecl;
+  begin
+    Result := PChar(Utf8ToAnsi(Current()));
+  end;
+
+
+  function CleanCache(): boolean; cdecl;
+  begin
+    Result := Clean();
+  end;
+
+  function RemoveDistro(distro, version: PChar): boolean; cdecl;
+  begin
+    Result := Remove(AnsiToUtf8(distro), AnsiToUtf8(version));
+  end;
+
+exports
+  CurrentDistro,
+  CleanCache,
+  RemoveDistro;
 end.
