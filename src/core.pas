@@ -8,6 +8,8 @@ interface
 uses Classes;
 
 type
+  TStringArray = array of string;
+
   TJdkVersionInfo = class(TPersistent)
   private
     fdistro: string;
@@ -43,14 +45,14 @@ function Clean(): boolean;
 function Remove(distro, version: string): boolean;
 //function Install(distro, version: string): boolean;
 //function Use(distro, version: string): boolean;
-//function DistroList(): string;
-//function VersionList(distro: string);
+function DistroList(): TStringArray;
+//function VersionList(distro: string): string;
 procedure CheckJpvmHome();
 
 implementation
 
 uses
-  SysUtils, FileUtil;
+  SysUtils, FileUtil, fpjson, jsonparser;
 
 const
   VERSION_URL = 'https://gitee.com/monkeyNaive/jpvm/raw/master/versions.json';
@@ -129,6 +131,33 @@ begin
     WriteLn('directory is not exists');
     Result := True;
   end;
+end;
+
+function DistroList(): TStringArray;
+var
+  config: TJpvmConfig;
+  versionJsonStr, object_name: string;
+  jData: TJSONData;
+  a: TStringArray;
+  i: integer;
+begin
+  config := TJpvmConfig.Create(GetJpvmHome());
+  if FileExists(config.versionPath) then
+  begin
+    versionJsonStr := ReadFileToString(config.versionPath);
+    jData := GetJSON(versionJsonStr);
+    setlength(a, jData.Count);
+
+    for i := 0 to jData.Count - 1 do
+    begin
+      object_name := TJSONObject(jData).Names[i];
+      a[i] := object_name;
+    end;
+    jData.Free;
+    Result := a;
+  end
+  else
+    Result := [];
 end;
 
 procedure CheckJpvmHome();
