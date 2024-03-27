@@ -8,8 +8,6 @@ interface
 uses Classes;
 
 type
-  TStringArray = array of string;
-
   TJdkVersionInfo = class(TPersistent)
   private
     fdistro: string;
@@ -45,7 +43,7 @@ function Clean(): boolean;
 function Remove(distro, version: string): boolean;
 //function Install(distro, version: string): boolean;
 //function Use(distro, version: string): boolean;
-function DistroList(): TStringArray;
+function DistroList(): string;
 //function VersionList(distro: string): string;
 procedure CheckJpvmHome();
 
@@ -133,31 +131,31 @@ begin
   end;
 end;
 
-function DistroList(): TStringArray;
+function DistroList(): string;
 var
   config: TJpvmConfig;
-  versionJsonStr, object_name: string;
+  versionJsonStr, distroName: string;
   jData: TJSONData;
-  a: TStringArray;
   i: integer;
+  jArray: TJSONArray;
 begin
   config := TJpvmConfig.Create(GetJpvmHome());
   if FileExists(config.versionPath) then
   begin
     versionJsonStr := ReadFileToString(config.versionPath);
     jData := GetJSON(versionJsonStr);
-    setlength(a, jData.Count);
+    jArray := TJSONArray.Create;
 
     for i := 0 to jData.Count - 1 do
     begin
-      object_name := TJSONObject(jData).Names[i];
-      a[i] := object_name;
+      distroName := TJSONObject(jData).Names[i];
+      jArray.Add(distroName);
     end;
     jData.Free;
-    Result := a;
+    Result := jArray.FormatJSON;
   end
   else
-    Result := [];
+    Result := jArray.FormatJSON;
 end;
 
 procedure CheckJpvmHome();

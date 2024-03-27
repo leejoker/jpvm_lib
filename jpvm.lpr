@@ -22,8 +22,14 @@ uses
     Result := Remove(AnsiToUtf8(distro), AnsiToUtf8(version));
   end;
 
+  function Distros(): PChar; cdecl;
+  begin
+    Result := PChar(Utf8ToAnsi(DistroList()));
+  end;
+
 exports
   CurrentDistro,
   CleanCache,
-  RemoveDistro;
+  RemoveDistro,
+  Distros;
 end.
