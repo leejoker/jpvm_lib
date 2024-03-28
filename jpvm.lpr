@@ -27,9 +27,15 @@ uses
     Result := PChar(Utf8ToAnsi(DistroList()));
   end;
 
+  function Versions(distro: PChar): PChar; cdecl;
+  begin
+    Result := PChar(Utf8ToAnsi(VersionList(AnsiToUtf8(distro))));
+  end;
+
 exports
   CurrentDistro,
   CleanCache,
   RemoveDistro,
-  Distros;
+  Distros,
+  Versions;
 end.

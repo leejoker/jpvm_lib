@@ -44,7 +44,7 @@ function Remove(distro, version: string): boolean;
 //function Install(distro, version: string): boolean;
 //function Use(distro, version: string): boolean;
 function DistroList(): string;
-//function VersionList(distro: string): string;
+function VersionList(distro: string): string;
 procedure CheckJpvmHome();
 
 implementation
@@ -150,6 +150,35 @@ begin
     begin
       distroName := TJSONObject(jData).Names[i];
       jArray.Add(distroName);
+    end;
+    jData.Free;
+    Result := jArray.FormatJSON;
+  end
+  else
+    Result := jArray.FormatJSON;
+end;
+
+function VersionList(distro: string): string;
+var
+  config: TJpvmConfig;
+  versionJsonStr, distroVersion: string;
+  jData: TJSONData;
+  i: integer;
+  jArray: TJSONArray;
+  distroObj: TJSONObject;
+begin
+  config := TJpvmConfig.Create(GetJpvmHome());
+  if FileExists(config.versionPath) then
+  begin
+    versionJsonStr := ReadFileToString(config.versionPath);
+    jData := GetJSON(versionJsonStr);
+    jArray := TJSONArray.Create;
+    distroObj := TJSONObject(jData).Get(distro, TJSONObject.Create());
+
+    for i := 0 to distroObj.Count - 1 do
+    begin
+      distroVersion := distroObj.Names[i];
+      jArray.Add(distroVersion);
     end;
     jData.Free;
     Result := jArray.FormatJSON;
