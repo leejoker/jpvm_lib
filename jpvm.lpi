@@ -26,6 +26,12 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="indylaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+      <Item>
         <PackageName Value="LazUtils"/>
       </Item>
     </RequiredPackages>
@@ -38,6 +44,15 @@
         <Filename Value="src\core.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Core"/>
+      </Unit>
+      <Unit>
+        <Filename Value="jpvm.lpi"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\jpvmutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="JpvmUtils"/>
       </Unit>
     </Units>
   </ProjectOptions>
