@@ -32,10 +32,16 @@ uses
     Result := PChar(Utf8ToAnsi(VersionList(AnsiToUtf8(distro))));
   end;
 
+  function InstallVersion(distro, version: PChar): boolean; cdecl;
+  begin
+    Result := Install(AnsiToUtf8(distro), AnsiToUtf8(version));
+  end;
+
 exports
   CurrentDistro,
   CleanCache,
   RemoveDistro,
   Distros,
-  Versions;
+  Versions,
+  InstallVersion;
 end.

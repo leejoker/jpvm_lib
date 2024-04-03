@@ -5,7 +5,7 @@ unit Core;
 
 interface
 
-uses Classes;
+uses Classes, SysUtils, FileUtil, fpjson, jsonparser, JpvmUtils, process;
 
 type
   TJdkVersionInfo = class(TPersistent)
@@ -41,16 +41,13 @@ function GetJpvmHome: string;
 function Current: string;
 function Clean(): boolean;
 function Remove(distro, version: string): boolean;
-//function Install(distro, version: string): boolean;
+function Install(distro, version: string): boolean;
 //function Use(distro, version: string): boolean;
 function DistroList(): string;
 function VersionList(distro: string): string;
 procedure CheckJpvmHome();
 
 implementation
-
-uses
-  SysUtils, FileUtil, fpjson, jsonparser;
 
 const
   VERSION_URL = 'https://gitee.com/monkeyNaive/jpvm/raw/master/versions.json';
@@ -106,7 +103,7 @@ var
 begin
   config := TJpvmConfig.Create(GetJpvmHome());
   if DirectoryExists(config.cachePath) then
-    Result := DeleteDirectory(config.cachePath, True)
+    Result := MyDeleteDirectory(config.cachePath, True)
   else
   begin
     WriteLn('directory is not exists');
@@ -139,23 +136,26 @@ var
   i: integer;
   jArray: TJSONArray;
 begin
+  CheckJpvmHome();
   config := TJpvmConfig.Create(GetJpvmHome());
+  Downloadfile(VERSION_URL, config.versionPath);
+  jArray := TJSONArray.Create;
   if FileExists(config.versionPath) then
   begin
-    versionJsonStr := ReadFileToString(config.versionPath);
-    jData := GetJSON(versionJsonStr);
-    jArray := TJSONArray.Create;
-
-    for i := 0 to jData.Count - 1 do
+    if FileSize(config.versionPath) <> 0 then
     begin
-      distroName := TJSONObject(jData).Names[i];
-      jArray.Add(distroName);
+      versionJsonStr := ReadFileToString(config.versionPath);
+      jData := GetJSON(versionJsonStr);
+
+      for i := 0 to jData.Count - 1 do
+      begin
+        distroName := TJSONObject(jData).Names[i];
+        jArray.Add(distroName);
+      end;
+      jData.Free;
     end;
-    jData.Free;
-    Result := jArray.FormatJSON;
-  end
-  else
-    Result := jArray.FormatJSON;
+  end;
+  Result := jArray.FormatJSON;
 end;
 
 function VersionList(distro: string): string;
@@ -167,24 +167,93 @@ var
   jArray: TJSONArray;
   distroObj: TJSONObject;
 begin
+  CheckJpvmHome();
   config := TJpvmConfig.Create(GetJpvmHome());
+  Downloadfile(VERSION_URL, config.versionPath);
+  jArray := TJSONArray.Create;
   if FileExists(config.versionPath) then
   begin
-    versionJsonStr := ReadFileToString(config.versionPath);
-    jData := GetJSON(versionJsonStr);
-    jArray := TJSONArray.Create;
-    distroObj := TJSONObject(jData).Get(distro, TJSONObject.Create());
-
-    for i := 0 to distroObj.Count - 1 do
+    if FileSize(config.versionPath) <> 0 then
     begin
-      distroVersion := distroObj.Names[i];
-      jArray.Add(distroVersion);
+      versionJsonStr := ReadFileToString(config.versionPath);
+      jData := GetJSON(versionJsonStr);
+      try
+        distroObj := TJSONObject(jData).Get(distro, TJSONObject.Create());
+
+        for i := 0 to distroObj.Count - 1 do
+        begin
+          distroVersion := distroObj.Names[i];
+          jArray.Add(distroVersion);
+        end;
+        jData.Free;
+      except
+        WriteLn('read version file failed');
+      end;
     end;
-    jData.Free;
-    Result := jArray.FormatJSON;
+  end;
+  Result := jArray.FormatJSON;
+end;
+
+function Install(distro, version: string): boolean;
+var
+  config: TJpvmConfig;
+  url, zipFile, zipFileDir, zipResult, targetDir, output: string;
+  a: TStringArray;
+begin
+  CheckJpvmHome();
+  config := TJpvmConfig.Create(GetJpvmHome());
+  Downloadfile(VERSION_URL, config.versionPath);
+  if FileExists(config.versionPath) then
+  begin
+    if FileSize(config.versionPath) <> 0 then
+    begin
+      try
+        url := GetVersionUrl(config.versionPath, distro, version);
+        a := url.Split('/');
+
+        zipFileDir := config.jdkCachePath + DirectorySeparator +
+          distro + DirectorySeparator + version;
+
+        ForceDirectories(zipFileDir);
+
+        zipFile := zipFileDir + DirectorySeparator + a[Length(a) - 1];
+
+        if not FileExists(zipFile) then  Downloadfile(url, zipFile);
+
+        zipResult := Decompress(zipFile);
+
+        if DirectoryExists(config.jdkPath + DirectorySeparator +
+          distro + DirectorySeparator + version) then
+          MyDeleteDirectory(config.jdkPath + DirectorySeparator +
+            distro + DirectorySeparator + version, False);
+
+        targetDir := config.jdkPath + DirectorySeparator + distro +
+          DirectorySeparator + version + DirectorySeparator +
+          GetSystemType() + DirectorySeparator + GetArchType();
+
+        ForceDirectories(targetDir);
+
+        {$IFDEF MSWINDOWS}
+        if not RenameFile(zipResult, targetDir + DirectorySeparator +
+          distro + '-' + version) then
+          Writeln('Failed to move directory: ' + targetDir +
+            DirectorySeparator + distro + '-' + version + ' from: ' + zipResult);
+        {$ELSE}
+        if RunCommand('mv', ['-rf', zipResult, targetDir + DirectorySeparator +
+          distro + '-' + version], output) then
+          Writeln('Failed to move directory');
+        {$ENDIF}
+      except
+        on E: Exception do
+          WriteLn(E.Message);
+        else
+          WriteLn('download version failed');
+      end;
+      Result := True;
+    end;
   end
   else
-    Result := jArray.FormatJSON;
+    Result := False;
 end;
 
 procedure CheckJpvmHome();
