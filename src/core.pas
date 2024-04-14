@@ -42,7 +42,7 @@ function Current: string;
 function Clean(): boolean;
 function Remove(distro, version: string): boolean;
 function Install(distro, version: string): boolean;
-//function Use(distro, version: string): boolean;
+function Use(distro, version: string): boolean;
 function DistroList(): string;
 function VersionList(distro: string): string;
 procedure CheckJpvmHome();
@@ -126,6 +126,18 @@ begin
     WriteLn('directory is not exists');
     Result := True;
   end;
+end;
+
+function Use(distro, version: string): boolean;
+var
+  config: TJpvmConfig;
+  jdkPath: string;
+begin
+  config := TJpvmConfig.Create(GetJpvmHome());
+  jdkPath := config.jdkPath + DirectorySeparator + distro +
+    DirectorySeparator + version + DirectorySeparator + GetSystemType() +
+    DirectorySeparator + GetArchType();
+
 end;
 
 function DistroList(): string;

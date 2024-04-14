@@ -15,6 +15,8 @@ function GetVersionUrl(filepath, distro, version: string): string;
 function SliceStringArray(const AArray: TStringArray;
   AStartIndex, AEndIndex: integer): TStringArray;
 function Decompress(src: string): string;
+function GetEnv(key: string): string;
+function PathJoin(paths: array of string): string;
 procedure Downloadfile(url, dest: string);
 
 implementation
@@ -146,14 +148,39 @@ begin
   end;
 end;
 
+function PathJoin(paths: array of string): string;
+var
+  targetPath: string;
+  idx: integer;
+begin
+  targetPath := '';
+  for idx := 0 to Length(paths) do
+  begin
+    targetPath := targetPath + paths[idx] + DirectorySeparator;
+  end;
+  Result := targetPath.Substring(0, Length(targetPath) - 1);
+end;
+
+function GetEnv(key: string): string;
+var
+  EnvVal: string;
+begin
+  EnvVal := GetEnvironmentVariable('key');
+  if EnvVal <> '' then
+    Result := EnvVal
+  else
+    Result := '';
+end;
+
 procedure Downloadfile(url, dest: string);
 var
   HTTP: TIdHTTP;
   FileStream: TFileStream;
   SSLHandler: TIdSSLIOHandlerSocketOpenSSL;
-  parentDir: string;
+  parentDir, sslPath: string;
 begin
-  IdOpenSSLSetLibPath('E:\projects\pascal\jpvm');
+  sslPath := GetEnv('SSL_PATH');
+  if sslPath <> '' then IdOpenSSLSetLibPath(sslPath);
 
   parentDir := dest.Substring(0, dest.LastIndexOf(DirectorySeparator));
   if not DirectoryExists(parentDir) then ForceDirectories(parentDir);

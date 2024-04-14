@@ -9,9 +9,9 @@
         <Filename Value="jpvm.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="19"/>
-        <CursorPos X="76" Y="28"/>
-        <UsageCount Value="104"/>
+        <TopLine Value="17"/>
+        <CursorPos X="65" Y="32"/>
+        <UsageCount Value="105"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -19,9 +19,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Core"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="229"/>
-        <CursorPos X="51" Y="234"/>
-        <UsageCount Value="104"/>
+        <TopLine Value="116"/>
+        <CursorPos X="23" Y="133"/>
+        <UsageCount Value="105"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -31,7 +31,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="50"/>
+        <UsageCount Value="51"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
@@ -39,9 +39,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="JpvmUtils"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="49"/>
-        <CursorPos X="93" Y="55"/>
-        <UsageCount Value="44"/>
+        <TopLine Value="134"/>
+        <CursorPos X="27" Y="161"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -454,23 +454,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="27">
-      <Position>
-        <Filename Value="jpvm.lpr"/>
-        <Caret Line="11" Column="51" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="44" Column="10" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="jpvm.lpr"/>
-        <Caret Line="19" Column="67" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="44" Column="26" TopLine="33"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="src\core.pas"/>
         <Caret Line="201" Column="24" TopLine="195"/>
@@ -478,18 +462,6 @@
       <Position>
         <Filename Value="jpvm.lpr"/>
         <Caret Line="38" Column="46" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="44" Column="10" TopLine="243"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="71" Column="50" TopLine="195"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="48" Column="11" TopLine="243"/>
       </Position>
       <Position>
         <Filename Value="src\core.pas"/>
@@ -564,8 +536,44 @@
         <Caret Line="37" Column="39" TopLine="28"/>
       </Position>
       <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="234" Column="51" TopLine="190"/>
+      </Position>
+      <Position>
         <Filename Value="src\jpvmutils.pas"/>
-        <Caret Line="9" Column="44" TopLine="25"/>
+        <Caret Line="168" Column="19" TopLine="138"/>
+      </Position>
+      <Position>
+        <Filename Value="src\jpvmutils.pas"/>
+        <Caret Line="153" Column="31" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="src\jpvmutils.pas"/>
+        <Caret Line="153" Column="31" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="src\jpvmutils.pas"/>
+        <Caret Line="160" Column="58" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="src\jpvmutils.pas"/>
+        <Caret Line="158" Column="16" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="src\jpvmutils.pas"/>
+        <Caret Line="163" Column="39" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="src\jpvmutils.pas"/>
+        <Caret Line="162" Column="41" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="jpvm.lpr"/>
+        <Caret Line="32" Column="62" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="214" Column="2" TopLine="158"/>
       </Position>
     </JumpHistory>
     <RunParams>
