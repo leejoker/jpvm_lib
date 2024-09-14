@@ -72,7 +72,7 @@ begin
   if EnvVal <> '' then
     Result := EnvVal
   else
-    {$IFDEF MSWINDOWS}
+  {$IFDEF MSWINDOWS}
     Result := GetEnvironmentVariable('USERPROFILE') + DirectorySeparator + '.jpvm';
   {$ENDIF}
   {$IFDEF UNIX}

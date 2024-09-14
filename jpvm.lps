@@ -10,8 +10,8 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <TopLine Value="17"/>
-        <CursorPos X="65" Y="32"/>
-        <UsageCount Value="105"/>
+        <CursorPos X="59" Y="13"/>
+        <UsageCount Value="116"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -19,9 +19,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Core"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="116"/>
-        <CursorPos X="23" Y="133"/>
-        <UsageCount Value="105"/>
+        <TopLine Value="27"/>
+        <CursorPos X="69" Y="39"/>
+        <UsageCount Value="116"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -31,7 +31,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="62"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
@@ -39,9 +39,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="JpvmUtils"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="134"/>
         <CursorPos X="27" Y="161"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="56"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -50,54 +49,54 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="31"/>
         <CursorPos X="17" Y="42"/>
-        <UsageCount Value="17"/>
+        <UsageCount Value="16"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\win\syswinh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="13"/>
         <CursorPos X="2" Y="19"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="D:\Softs\freepascal\fpcsrc\rtl\unix\sysutils.pp"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\Softs\freepascal\fpcsrc\rtl\objpas\sysutils\filutilh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="172"/>
         <CursorPos X="25" Y="201"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\Softs\freepascal\fpcsrc\rtl\objpas\sysutils\diskh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="19" Y="27"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\Softs\freepascal\fpcsrc\packages\fcl-json\src\fpjsonrtti.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="914"/>
         <CursorPos X="42" Y="922"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\Softs\freepascal\fpcsrc\packages\fcl-fpcunit\src\fpcunit.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="59"/>
         <CursorPos X="21" Y="92"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\systemh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="545"/>
         <CursorPos X="3" Y="556"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\win\sysutils.pp"/>
@@ -105,7 +104,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="692"/>
         <CursorPos X="43" Y="696"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\lazarus\components\lazutils\fileutil.pas"/>
@@ -113,77 +112,77 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos X="10" Y="58"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\ustringh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="138"/>
         <CursorPos X="22" Y="143"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\sysutilh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="213"/>
         <CursorPos X="31" Y="226"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\sysstrh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="139"/>
         <CursorPos X="77" Y="152"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\fcl-json\src\fpjson.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="463"/>
         <CursorPos X="5" Y="476"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\classes\classesh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="181"/>
         <CursorPos X="57" Y="192"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\fcl-web\src\base\fphttpclient.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="13"/>
         <CursorPos X="59" Y="25"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\lazarus\components\lazutils\fileutil.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="113"/>
         <CursorPos X="5" Y="132"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\objpash.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="205"/>
         <CursorPos X="25" Y="215"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\objpas.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="324"/>
         <CursorPos X="41" Y="330"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\openssl\src\openssl.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1256"/>
         <CursorPos X="13" Y="1268"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="libeay32.dll"/>
@@ -191,7 +190,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
@@ -200,7 +199,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
@@ -209,7 +208,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
@@ -218,7 +217,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
@@ -227,7 +226,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
@@ -236,7 +235,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="17"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
@@ -244,41 +243,41 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="64"/>
         <CursorPos X="58" Y="73"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\dynlibh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="21" Y="52"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\dynlib.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="55"/>
         <CursorPos X="28" Y="63"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\threadh.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="92"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\thread.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="244"/>
         <CursorPos X="22" Y="247"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\config_lazarus\onlinepackagemanager\packages\Indy10\System\IdBaseComponent.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="121"/>
         <CursorPos X="17" Y="147"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
@@ -286,7 +285,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="2346"/>
         <CursorPos X="34" Y="2355"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
@@ -294,7 +293,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="22845"/>
         <CursorPos X="17" Y="22702"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
@@ -302,7 +301,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1521"/>
         <CursorPos X="10" Y="1534"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
@@ -310,54 +309,54 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="171"/>
         <CursorPos X="10" Y="182"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\file.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos Y="265"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\inc\filerec.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="3" Y="32"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\fcl-json\src\jsonparser.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\finah.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="10" Y="33"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\fina.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="424"/>
         <CursorPos X="33" Y="441"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\syshelph.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="5"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\zlib\src\zlib.pp"/>
         <UnitName Value="ZLib"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\paszlib\src\zipper.pp"/>
@@ -365,14 +364,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="568"/>
         <CursorPos X="15" Y="564"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\config_lazarus\onlinepackagemanager\packages\Indy10\Protocols\IdHTTP.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3239"/>
         <CursorPos X="88" Y="3136"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
@@ -381,14 +380,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="21"/>
         <CursorPos X="16" Y="31"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\fcl-process\src\processbody.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="678"/>
         <CursorPos X="53" Y="689"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\lazarus\components\lazutils\lazfileutils.pas"/>
@@ -396,81 +395,72 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="52"/>
         <CursorPos X="10" Y="63"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\lazarus\components\lazutils\winlazfileutils.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="107"/>
         <CursorPos Y="109"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\filutil.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="284"/>
         <CursorPos X="3" Y="286"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\win\wininc\unifun.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="110"/>
         <CursorPos X="10" Y="121"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\win\sharemem.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\diskh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="16" Y="23"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\disk.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="67"/>
         <CursorPos X="12" Y="78"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\osutilsh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="40"/>
         <CursorPos X="15" Y="24"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\sysutils.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="468"/>
         <CursorPos X="3" Y="476"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Softs\freepascal\fpcsrc\packages\fcl-process\src\process.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="90" Y="14"/>
         <UsageCount Value="10"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="201" Column="24" TopLine="195"/>
-      </Position>
-      <Position>
-        <Filename Value="jpvm.lpr"/>
-        <Caret Line="38" Column="46" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="204" Column="32" TopLine="195"/>
-      </Position>
-      <Position>
-        <Filename Value="src\core.pas"/>
-        <Caret Line="205" Column="23" TopLine="194"/>
-      </Position>
       <Position>
         <Filename Value="src\jpvmutils.pas"/>
         <Caret Line="17" Column="11" TopLine="6"/>
@@ -574,6 +564,22 @@
       <Position>
         <Filename Value="src\core.pas"/>
         <Caret Line="214" Column="2" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="140" Column="4"/>
+      </Position>
+      <Position>
+        <Filename Value="jpvm.lpr"/>
+        <Caret Line="46" Column="17" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="jpvm.lpr"/>
+        <Caret Line="35" Column="12" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="src\core.pas"/>
+        <Caret Line="44" Column="14" TopLine="32"/>
       </Position>
     </JumpHistory>
     <RunParams>

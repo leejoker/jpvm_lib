@@ -6,7 +6,7 @@ uses
   Classes,
   Core;
 
-  function CurrentDistro(): PChar; cdecl;
+  function CurrentDistro(): pchar; cdecl;
   begin
     Result := PChar(Utf8ToAnsi(Current()));
   end;
@@ -17,22 +17,22 @@ uses
     Result := Clean();
   end;
 
-  function RemoveDistro(distro, version: PChar): boolean; cdecl;
+  function RemoveDistro(distro, version: pchar): boolean; cdecl;
   begin
     Result := Remove(AnsiToUtf8(distro), AnsiToUtf8(version));
   end;
 
-  function Distros(): PChar; cdecl;
+  function Distros(): pchar; cdecl;
   begin
     Result := PChar(Utf8ToAnsi(DistroList()));
   end;
 
-  function Versions(distro: PChar): PChar; cdecl;
+  function Versions(distro: pchar): pchar; cdecl;
   begin
     Result := PChar(Utf8ToAnsi(VersionList(AnsiToUtf8(distro))));
   end;
 
-  function InstallVersion(distro, version: PChar): boolean; cdecl;
+  function InstallVersion(distro, version: pchar): boolean; cdecl;
   begin
     Result := Install(AnsiToUtf8(distro), AnsiToUtf8(version));
   end;
