@@ -3,7 +3,6 @@ library jpvm;
 {$mode objfpc}{$H+}
 
 uses
-  Classes,
   Core;
 
   function CurrentDistro(): pchar; cdecl;

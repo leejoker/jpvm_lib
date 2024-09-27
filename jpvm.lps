@@ -9,8 +9,7 @@
         <Filename Value="jpvm.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="17"/>
-        <CursorPos X="59" Y="13"/>
+        <CursorPos X="66" Y="31"/>
         <UsageCount Value="116"/>
         <Loaded Value="True"/>
       </Unit>
@@ -20,7 +19,7 @@
         <UnitName Value="Core"/>
         <EditorIndex Value="1"/>
         <TopLine Value="27"/>
-        <CursorPos X="69" Y="39"/>
+        <CursorPos Y="39"/>
         <UsageCount Value="116"/>
         <Loaded Value="True"/>
       </Unit>
@@ -278,7 +277,6 @@
         <TopLine Value="121"/>
         <CursorPos X="17" Y="147"/>
         <UsageCount Value="7"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\config_lazarus\onlinepackagemanager\packages\Indy10\Protocols\IdSSLOpenSSL.pas"/>
@@ -286,7 +284,6 @@
         <TopLine Value="2346"/>
         <CursorPos X="34" Y="2355"/>
         <UsageCount Value="7"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\config_lazarus\onlinepackagemanager\packages\Indy10\Protocols\IdSSLOpenSSLHeaders.pas"/>
@@ -294,7 +291,6 @@
         <TopLine Value="22845"/>
         <CursorPos X="17" Y="22702"/>
         <UsageCount Value="7"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\config_lazarus\onlinepackagemanager\packages\Indy10\System\IdGlobal.pas"/>
@@ -302,7 +298,6 @@
         <TopLine Value="1521"/>
         <CursorPos X="10" Y="1534"/>
         <UsageCount Value="7"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\rtl\objpas\sysutils\filutilh.inc"/>
@@ -372,7 +367,6 @@
         <TopLine Value="3239"/>
         <CursorPos X="88" Y="3136"/>
         <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="D:\freepascal\fpcsrc\packages\fcl-base\src\contnrs.pp"/>
@@ -459,12 +453,15 @@
         <CursorPos X="90" Y="14"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Softs\freepascal\fpcsrc\rtl\inc\ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="135"/>
+        <CursorPos X="10" Y="150"/>
+        <UsageCount Value="10"/>
+      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="src\jpvmutils.pas"/>
-        <Caret Line="17" Column="11" TopLine="6"/>
-      </Position>
       <Position>
         <Filename Value="jpvm.lpr"/>
         <Caret Line="31" Column="70" TopLine="26"/>
@@ -580,6 +577,10 @@
       <Position>
         <Filename Value="src\core.pas"/>
         <Caret Line="44" Column="14" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="jpvm.lpr"/>
+        <Caret Line="35" Column="42" TopLine="17"/>
       </Position>
     </JumpHistory>
     <RunParams>
